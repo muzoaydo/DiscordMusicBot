@@ -95,4 +95,4 @@ async def stop(ctx):
         await ctx.send("No song is currently playing.")
 
 # Bot Token
-bot.run('DISCORD_TOKEN')
+bot.run(os.getenv('DISCORD_TOKEN'))
