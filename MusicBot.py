@@ -12,6 +12,7 @@ bot = commands.Bot(command_prefix='-', intents=intents)
 ydl_opts = {
     'format': 'bestaudio/best',
     'noplaylist': True,
+    'cookiefile': 'cookies.txt',
     'quiet': True,
     'extract_flat': 'in_playlist',
     'default_search': 'auto',
@@ -94,4 +95,4 @@ async def stop(ctx):
         await ctx.send("No song is currently playing.")
 
 # Bot Token
-bot.run(os.getenv('DISCORD_TOKEN'))
+bot.run('DISCORD_TOKEN')
