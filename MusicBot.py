@@ -12,8 +12,7 @@ bot = commands.Bot(command_prefix='-', intents=intents)
 ydl_opts = {
     'format': 'bestaudio/best',
     'noplaylist': True,
-    'cookiefile': './cookies.txt',
-    'quiet': False,
+    'quiet': True,
     'extract_flat': 'in_playlist',
     'default_search': 'auto',
     'outtmpl': '%(title)s.%(ext)s',
